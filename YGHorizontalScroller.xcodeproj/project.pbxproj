@@ -489,6 +489,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = YGHorizontalScroller/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yigu.YGHorizontalScroller;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -507,6 +508,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = YGHorizontalScroller/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yigu.YGHorizontalScroller;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -599,6 +601,7 @@
 				194AFF0A1CE1569E0011490D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		194AFF0B1CE1569E0011490D /* Build configuration list for PBXNativeTarget "YGHorizontalScrollerTests" */ = {
 			isa = XCConfigurationList;
@@ -607,6 +610,7 @@
 				194AFF0D1CE1569E0011490D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		194AFF2E1CE156E60011490D /* Build configuration list for PBXNativeTarget "YGHorizontalScrollerDemo" */ = {
 			isa = XCConfigurationList;
@@ -615,6 +619,7 @@
 				194AFF301CE156E60011490D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		194AFF311CE156E60011490D /* Build configuration list for PBXNativeTarget "YGHorizontalScrollerDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -623,6 +628,7 @@
 				194AFF331CE156E60011490D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
