@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
 
   s.homepage     = "https://github.com/soapyigu/YGHorizontalScroller"
 
-  s.license      = 'MIT'
+  s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.author       = 'Yi Gu'
   s.platform     = :ios, "8.0"
   s.source       = { :git => "https://github.com/soapyigu/YGHorizontalScroller.git", :tag => s.version }
