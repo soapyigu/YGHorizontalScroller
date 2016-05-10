@@ -5,16 +5,12 @@ Pod::Spec.new do |s|
   s.summary      = "A Simple Horizontal Scroller implemented by Swift"
 
   s.homepage     = "https://github.com/soapyigu/YGHorizontalScroller"
-  s.screenshots  = "https://github.com/soapyigu/YGHorizontalScroller/blob/master/Screenshots/landscape.gif", "https://github.com/soapyigu/YGHorizontalScroller/blob/master/Screenshots/portrait.gif
 
-  s.license      = "soapyigu"
-
-  s.author    = "Yi Gu"
-  
-  # s.platform     = :ios, "8.0"
-
+  s.license      = 'MIT'
+  s.author       = 'Yi Gu'
+  s.platform     = :ios, "8.0"
   s.source       = { :git => "https://github.com/soapyigu/YGHorizontalScroller.git", :tag => s.version }
-
-  s.source_files  = "YGHorizontalScroller/*.swift"
+  s.source_files = 'YGHorizontalScroller/*.swift'
+  s.requires_arc = true
 
 end
