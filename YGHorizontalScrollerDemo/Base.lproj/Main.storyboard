@@ -25,7 +25,6 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="JTJ-EJ-cSN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ke3-Cq-wIC"/>
                             <constraint firstItem="JTJ-EJ-cSN" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="Rbd-tv-tJl"/>

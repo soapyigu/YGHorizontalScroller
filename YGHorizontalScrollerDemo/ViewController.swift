@@ -23,8 +23,14 @@ class ViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
+    setupUI()
     setupData()
     setupScroller()
+  }
+  
+  func setupUI() {
+    self.scroller.layer.borderWidth = 3.0
+    self.scroller.layer.borderColor = UIColor.whiteColor().CGColor
   }
   
   func setupData() {
