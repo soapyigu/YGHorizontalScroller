@@ -8,7 +8,7 @@
 
 import UIKit
 
-@objc protocol YGHorizontalScrollerDelegate {
+public protocol YGHorizontalScrollerDelegate: class {
   // number of views to display inside the horizontal scroller
   func numberOfViews(scroller: YGHorizontalScroller) -> Int
   
@@ -18,19 +18,19 @@ import UIKit
   // inform the delegate what the view at <index> has been clicked
   func didSelectViewAtIndex(scroller: YGHorizontalScroller, index:Int)
   
-  // set up the initial view to display, the default is 0
-  optional func initialViewIndex(scroller: YGHorizontalScroller) -> Int
+  // set up the initial view to display
+  func initialViewIndex(scroller: YGHorizontalScroller) -> Int
 }
 
-class YGHorizontalScroller: UIView {
-  weak var delegate: YGHorizontalScrollerDelegate?
+public class YGHorizontalScroller: UIView {
+  public weak var delegate: YGHorizontalScrollerDelegate?
   
   // MARK: - Variables
-  var viewPadding = 10
-  var viewWidth = 100
-  var viewHeight = 100
-  var viewOffset = 100
-  var viewArray = [UIView]()
+  public var viewPadding = 10
+  public var viewWidth = 100
+  public var viewHeight = 100
+  public var viewOffset = 100
+  public var viewArray = [UIView]()
   
   private var scroller : UIScrollView!
   
@@ -40,7 +40,7 @@ class YGHorizontalScroller: UIView {
     initializeScrollView()
   }
   
-  required init(coder aDecoder: NSCoder) {
+  required public init(coder aDecoder: NSCoder) {
     super.init(coder: aDecoder)!
     initializeScrollView()
   }
@@ -64,7 +64,7 @@ class YGHorizontalScroller: UIView {
   }
   
   // call reload when added to another view
-  override func didMoveToSuperview() {
+  override public func didMoveToSuperview() {
     reload()
   }
   
@@ -90,11 +90,11 @@ class YGHorizontalScroller: UIView {
     }
   }
   
-  func viewAtIndex(index :Int) -> UIView {
+  public func viewAtIndex(index :Int) -> UIView {
     return viewArray[index]
   }
   
-  func reload() {
+  public func reload() {
     // check if there is a delegate, if not there is nothing to load.
     if let delegate = delegate {
       // reset viewArray
@@ -127,9 +127,8 @@ class YGHorizontalScroller: UIView {
       scroller.contentSize = CGSizeMake(CGFloat(xValue + viewOffset), frame.size.height)
       
       // if an initial view is defined, center the scroller on it
-      if let initialView = delegate.initialViewIndex?(self) {
-        scroller.setContentOffset(CGPoint(x: CGFloat(initialView) * CGFloat((viewWidth + (2 * viewPadding))), y: 0), animated: true)
-      }
+      let initialView = delegate.initialViewIndex(self)
+      scroller.setContentOffset(CGPoint(x: CGFloat(initialView) * CGFloat((viewWidth + (2 * viewPadding))), y: 0), animated: true)
     }
   }
   
@@ -145,13 +144,13 @@ class YGHorizontalScroller: UIView {
 }
 
 extension YGHorizontalScroller: UIScrollViewDelegate {
-  func scrollViewDidEndDragging(scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+  public func scrollViewDidEndDragging(scrollView: UIScrollView, willDecelerate decelerate: Bool) {
     if !decelerate {
       centerCurrentView()
     }
   }
   
-  func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
+  public func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
     centerCurrentView()
   }
 }

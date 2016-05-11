@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import YGHorizontalScroller
 
 class ViewController: UIViewController {
 
