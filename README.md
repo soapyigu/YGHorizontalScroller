@@ -96,7 +96,7 @@ func initialViewIndex(scroller: YGHorizontalScroller) -> Int {
 
 ## Credits
 
-Owned and maintained by Yi Gu ([@soapyigu](http://weibo.com/soapyigu)). 
+Owned and maintained by Yi. 
 
 ## Contributing
 
