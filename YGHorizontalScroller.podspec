@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "YGHorizontalScroller"
-  s.version      = "0.0.1"
+  s.version      = "0.0.3"
   s.summary      = "A Simple Horizontal Scroller implemented by Swift"
 
   s.homepage     = "https://github.com/soapyigu/YGHorizontalScroller"
