@@ -45,6 +45,7 @@ import YGHorizontalScroller
 You can create the scroll view by:
 ```swift
 scroller = YGHorizontalScroller(frame: CGRect(x: 0, y: 100, width: screenWidth, height: 300))
+view.addSubview(scroller)
 
 scroller.viewWidth = 200
 scroller.viewHeight = 300
@@ -88,7 +89,6 @@ func initialViewIndex(scroller: YGHorizontalScroller) -> Int {
   return 0
 }
 ```
-
 
 # Screenshots
 ![portrait](https://github.com/soapyigu/YGHorizontalScroller/blob/master/Screenshots/portrait.gif)
