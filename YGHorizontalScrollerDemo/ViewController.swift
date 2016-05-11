@@ -71,9 +71,9 @@ extension ViewController: YGHorizontalScrollerDelegate {
     let imageView = UIImageView(image: image)
       
     if currentIndex == index {
-      highlightView(view, isHighlight: true)
+      highlightView(imageView, isHighlight: true)
     } else {
-      highlightView(view, isHighlight: false)
+      highlightView(imageView, isHighlight: false)
     }
     
     return imageView
