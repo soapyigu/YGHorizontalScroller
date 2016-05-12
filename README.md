@@ -104,4 +104,4 @@ Bug reports and pull requests are welcome.
 
 ## License
 
-AutoLayoutPlus is released under the MIT license. See LICENSE for details.
+YGHorizontalScroller is released under the MIT license. See LICENSE for details.
