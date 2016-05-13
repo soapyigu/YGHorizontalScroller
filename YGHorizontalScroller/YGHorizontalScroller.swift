@@ -30,9 +30,9 @@ public class YGHorizontalScroller: UIView {
   public var viewWidth = 100
   public var viewHeight = 100
   public var viewOffset = 100
-  public var viewArray = [UIView]()
   
-  private var scroller : UIScrollView!
+  var viewArray = [UIView]()
+  var scroller : UIScrollView!
   
   // MARK: - Lifecycle
   override public init(frame: CGRect) {
