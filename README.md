@@ -3,7 +3,7 @@
 )](https://developer.apple.com/iphone/index.action)
 [![Language](http://img.shields.io/badge/language-swift-brightgreen.svg?style=flat
 )](https://developer.apple.com/swift)
-[![CocoaPods](https://img.shields.io/badge/pod-v0.0.3-blue.svg)]()
+[![CocoaPods](https://img.shields.io/badge/pod-v0.0.4-blue.svg)]()
 
 YGHorizontalScroller is a simple horizontal scroller implemented by Swift.
 
