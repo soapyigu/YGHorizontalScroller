@@ -5,7 +5,7 @@
 )](https://developer.apple.com/swift)
 [![CocoaPods](https://img.shields.io/badge/pod-v0.0.4-blue.svg)]()
 
-YGHorizontalScroller is a simple horizontal scroller implemented by Swift.
+YGHorizontalScroller is a simple horizontal scroller implemented by Swift, this scroller will automatically center and highlight the subview you select or click.
 
 ## Requirements
 
